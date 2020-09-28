@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0a8980d5-047c-4f0b-b405-29530f297dd4" name="Default Changelist" comment="" />
+    <list default="true" id="0a8980d5-047c-4f0b-b405-29530f297dd4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/algorithm_functions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hdf5_helper_functions.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/let_it_rip.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/program_2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cv_helper_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/cv_helper_functions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/program.py" beforeDir="false" afterPath="$PROJECT_DIR$/program.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,7 +38,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="1h2eMyS4CAnOH0nIm7k45iZ0cJU" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -36,12 +50,17 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.program">
+  <component name="PyCoverageOptionsProvider">
+    <option name="myUseBundledCoveragePy" value="true" />
+  </component>
+  <component name="RunManager" selected="Python.let_it_rip">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="CovPy" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -56,6 +75,47 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="let_it_rip" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="CovPy" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/let_it_rip.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="program (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="CovPy" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="E:/WorkStuff/Project_SARS_COV2/PythonProject" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="E:/WorkStuff/Project_SARS_COV2/PythonProject/program.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -86,6 +146,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="program_2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="CovPy" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/program_2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="CovPy" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -110,7 +192,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.let_it_rip" />
         <item itemvalue="Python.program" />
+        <item itemvalue="Python.program_2" />
+        <item itemvalue="Python.program (1)" />
         <item itemvalue="Python.test" />
       </list>
     </recent_temporary>
@@ -146,6 +231,16 @@
       <workItem from="1599516971708" duration="294000" />
       <workItem from="1599560710720" duration="135000" />
       <workItem from="1599564155109" duration="4844000" />
+      <workItem from="1599743627449" duration="1286000" />
+      <workItem from="1600265419358" duration="1489000" />
+      <workItem from="1600338488347" duration="13572000" />
+      <workItem from="1600377922920" duration="1161000" />
+      <workItem from="1600415751069" duration="17707000" />
+      <workItem from="1600677957053" duration="16665000" />
+      <workItem from="1600764944516" duration="14195000" />
+      <workItem from="1600854028637" duration="41765000" />
+      <workItem from="1600933828383" duration="46950000" />
+      <workItem from="1601034322948" duration="8833000" />
     </task>
     <servers />
   </component>
@@ -157,37 +252,99 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="552" y="184" key="#Inspections/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1599222352066" />
+    <state width="1387" height="466" key="DebuggerActiveHint" timestamp="1600888560819">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1387" height="466" key="DebuggerActiveHint/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1600888560819" />
     <state x="739" y="268" key="FileChooserDialogImpl" timestamp="1599308647925">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="739" y="268" key="FileChooserDialogImpl/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1599308647925" />
-    <state width="1877" height="196" key="GridCell.Tab.0.bottom" timestamp="1599585217541">
+    <state width="1877" height="252" key="GridCell.Tab.0.bottom" timestamp="1601066522512">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="196" key="GridCell.Tab.0.bottom/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1599585217541" />
-    <state width="1877" height="196" key="GridCell.Tab.0.center" timestamp="1599585217541">
+    <state width="1877" height="252" key="GridCell.Tab.0.bottom/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1601066522512" />
+    <state width="1877" height="252" key="GridCell.Tab.0.center" timestamp="1601066522512">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="196" key="GridCell.Tab.0.center/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1599585217541" />
-    <state width="1877" height="196" key="GridCell.Tab.0.left" timestamp="1599585217541">
+    <state width="1877" height="252" key="GridCell.Tab.0.center/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1601066522512" />
+    <state width="1877" height="252" key="GridCell.Tab.0.left" timestamp="1601066522511">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="196" key="GridCell.Tab.0.left/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1599585217541" />
-    <state width="1877" height="196" key="GridCell.Tab.0.right" timestamp="1599585217541">
+    <state width="1877" height="252" key="GridCell.Tab.0.left/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1601066522511" />
+    <state width="1877" height="252" key="GridCell.Tab.0.right" timestamp="1601066522512">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="196" key="GridCell.Tab.0.right/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1599585217541" />
-    <state x="461" y="168" key="SettingsEditor" timestamp="1599585212474">
+    <state width="1877" height="252" key="GridCell.Tab.0.right/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1601066522512" />
+    <state x="461" y="168" key="SettingsEditor" timestamp="1600862828605">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="461" y="168" key="SettingsEditor/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1599585212474" />
-    <state x="656" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1599560838370">
+    <state x="461" y="168" key="SettingsEditor/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1600862828605" />
+    <state width="968" height="533" key="XDebugger.FullValuePopup" timestamp="1600896461053">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="656" y="350" key="com.intellij.ide.util.TipDialog/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1599560838370" />
+    <state width="968" height="533" key="XDebugger.FullValuePopup/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1600896461053" />
+    <state x="656" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1601034324060">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="656" y="350" key="com.intellij.ide.util.TipDialog/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1601034324060" />
+    <state x="616" y="205" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1600857023630">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="616" y="205" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1600857023630" />
+    <state x="769" y="443" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1600983264336">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="769" y="443" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1600983264336" />
+    <state x="-1147" y="8" width="1158" height="719" key="dock-window-1" timestamp="1600991445765">
+      <screen x="-1920" y="0" width="1920" height="1050" />
+    </state>
+    <state x="-1147" y="8" width="1158" height="719" key="dock-window-1/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1600991445765" />
+    <state x="179" y="231" width="672" height="678" key="search.everywhere.popup" timestamp="1600356990833">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="179" y="231" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1600356990833" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/program.py</url>
+          <line>511</line>
+          <option name="timeStamp" value="51" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/program.py</url>
+          <line>496</line>
+          <option name="timeStamp" value="52" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/program.py</url>
+          <line>431</line>
+          <option name="timeStamp" value="114" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/let_it_rip.py</url>
+          <line>211</line>
+          <option name="timeStamp" value="143" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/let_it_rip.py</url>
+          <line>310</line>
+          <option name="timeStamp" value="154" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="hori_proj" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/CovPy$let_it_rip.coverage" NAME="let_it_rip Coverage Results" MODIFIED="1601055266369" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CovPy$test.coverage" NAME="test Coverage Results" MODIFIED="1599495685178" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/CovPy$program.coverage" NAME="program Coverage Results" MODIFIED="1599567948851" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/CovPy$program_2.coverage" NAME="program_2 Coverage Results" MODIFIED="1600862098492" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/CovPy$program.coverage" NAME="program Coverage Results" MODIFIED="1600983036703" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

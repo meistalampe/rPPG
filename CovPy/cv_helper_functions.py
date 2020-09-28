@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 import sys
-
+import os
 """
 Landmark Regions
 0-16 = Jawline
@@ -46,10 +46,22 @@ def get_values_from_roi(_roi_points: list, _image):
 
     # define points (as small diamond shape)
     pts = np.array([_roi_points], dtype=np.int32)
+    # cv2.fillPoly(mask, pts, (255, 255, 255))
     cv2.fillPoly(mask, pts, (255, 255, 255))
 
     # get color values
-    values = _image[np.where((mask == (255, 255, 255)).all(axis=2))]
+    # values = _image[np.where((mask == (255, 255, 255)).all(axis=2))]
     # print(values)
+    values = np.where(mask == 255, _image, 0)
     return values
 
+
+def load_images_from_folder(folder, file_tag: str = 'ThFace'):
+    images = []
+    for filename in os.listdir(folder):
+        if file_tag in filename:
+            img = cv2.imread(os.path.join(folder, filename))
+            if img is not None:
+                images.append(img)
+
+    return images

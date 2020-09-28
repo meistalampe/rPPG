@@ -10,7 +10,7 @@ print(image.shape)
 mask = np.zeros((image.shape), dtype=np.uint8)
 
 # define points (as small diamond shape)
-pts = np.array( [[[25,20],[30,25],[25,30],[20,25]]], dtype=np.int32 )
+pts = np.array([[[25,20],[30,25],[25,30],[20,25]]], dtype=np.int32 )
 cv2.fillPoly(mask, pts, (255,255,255) )
 
 # get color values
