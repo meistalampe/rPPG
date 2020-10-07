@@ -27,10 +27,23 @@ def thermal(h5filename, date, destination_dir):
         cv2.imwrite(destination_dir + '\\blank.png', blank_image)
 
 
-def load_thermal_file(h5filename, date):
+# def load_thermal_file(h5filename, date):
+#     try:
+#         filename = 'Z:\\Thermal\\' + date + '\\' + h5filename
+#         file = h5py.File(filename, 'r')
+#         data = file['FRAMES']
+#         timestamps = file['Timestamps_ms']
+#     except FileNotFoundError:
+#         data = []
+#         timestamps = []
+#
+#     return data, timestamps
+
+
+def load_thermal_file(_filename, _folder):
     try:
-        filename = 'Z:\\Thermal\\' + date + '\\' + h5filename
-        file = h5py.File(filename, 'r')
+        filepath = _folder + '\\' + _filename
+        file = h5py.File(filepath, 'r')
         data = file['FRAMES']
         timestamps = file['Timestamps_ms']
     except FileNotFoundError:
@@ -67,14 +80,18 @@ def images_to_video(image_dir: str = 'E:\\GitHub\\CovPySourceFile\\ThermalImages
         size = (width, height)
         img_array.append(img)
 
-    out = cv2.VideoWriter(target_dir + video_name + '.avi', cv2.VideoWriter_fourcc(*'DIVX'), 15, size)
+    out = cv2.VideoWriter(target_dir + video_name + '.avi', cv2.VideoWriter_fourcc(*'DIVX'), fps=30, frameSize=size)
 
     for i in range(len(img_array)):
         out.write(img_array[i])
     out.release()
 
 
-def load_frame_from_dataset(dataset, frame_height, frame_number):
-    return dataset[frame_number, 0:frame_height, :]
+def load_frame_from_dataset(dataset, frame_height, frame_width, frame_number):
+    return dataset[frame_number, 0:frame_height, 0:frame_width]
+
+
+def load_sub_frame(dataset, y_range: tuple, x_range: tuple, frame_number):
+    return dataset[frame_number, y_range[0]:y_range[1]+1, x_range[0]:x_range[1]+1]
 
 

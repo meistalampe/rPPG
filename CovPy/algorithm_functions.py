@@ -1,6 +1,7 @@
 import cv2
 import numpy as np
 import math
+import time
 import matplotlib.pyplot as plt
 from enum import Enum
 from cv_helper_functions import *
@@ -21,53 +22,113 @@ class KernelMethods(Enum):
     CANNY = 3
 
 
-def multilevel_otsu(dataset, target_region: int = 3, write: bool = False, destination_dir: str = 'E:\\GitHub\\CovPySourceFile\\TrackingMask\\',
-                    filename: str = 'Mask_', n_regions: int = 4):
-    n_frames, height, width, total_time_ms = [dataset.attrs[i] for i in list(dataset.attrs)]
-    # Setting the font size for all plots.
-    # matplotlib.rcParams['font.size'] = 9
+class OtsuMethods(Enum):
+    IMAGES = 1
+    BINARY = 2
 
-    mask = []
-    for n in range(n_frames):
-        # The input image.
-        frame = load_frame_from_dataset(dataset, height, n)
-        t_image = frame * 0.1 - 273.15
-        n_frame = cv2.normalize(t_image, None, alpha=0, beta=255, norm_type=cv2.NORM_MINMAX, dtype=cv2.CV_8U)
 
-        # Applying multi-Otsu threshold for the default value, generating
-        # three classes.
-        thresholds = threshold_multiotsu(n_frame, classes=n_regions)
+def multi_level_otsu(
+        images,
+        n_regions: int = 4,
+        target_region: int = 3,
+        method: OtsuMethods = OtsuMethods.IMAGES,
+        _destination_dir: str = 'E:\\GitHub\\CovPySourceFile\\MultiLevelOtsu',
+        draw: bool = False,
+        write: bool = False):
+    """
+    Function applies multi-level Otsu algorithm to seperate the image background from the foreground.
 
-        # Using the threshold values, we generate the three regions.
-        regions = np.digitize(n_frame, bins=thresholds)
+    :param images:
+        input the normalized thermal data.
+    :param n_regions:
+        number of layers the algorithm tries to create.
+    :param target_region:
+        number of the closest layer. This is the foreground and should contain the desired face regions.
+    :param method:
+        determines if the mask is filled binary or with actual values
+    :param write:
+        when true the function will write the resulting images to .png files.
+    :param _destination_dir:
+        save path for image files.
+    :param file_name:
+        name tag for the saved files.
+    :param draw
+        when true the generated images are plotted.
+    :return:
+        a list of images. Each image is a otsu mask for the target region of the corresponding thermal frame.
+    """
 
-        # fig, ax = plt.subplots(nrows=1, ncols=3, figsize=(10, 3.5))
+    if not isinstance(method, OtsuMethods):
+        raise TypeError('Method must be an instance of OtsuMethods.')
 
-        # Plotting the original image.
-        # ax[0].imshow(frame, cmap='gray')
-        # ax[0].set_title('Original')
-        # ax[0].axis('off')
+    if not os.path.exists(_destination_dir):
+        os.makedirs(_destination_dir)
 
-        # Plotting the histogram and the two thresholds obtained from
-        # multi-Otsu.
-        # ax[1].hist(frame.ravel(), bins=255)
-        # ax[1].set_title('Histogram')
-        # for thresh in thresholds:
-        #   ax[1].axvline(thresh, color='r')
+    otsu_images = []
+    # apply multi-level Otsu threshold for the input value n_regions, generating just as many classes
+    for th_n, f in enumerate(images):
+        # start = time.time()
+        thresholds = threshold_multiotsu(image=f, classes=n_regions)
+        # use the threshold values to generate the classes
+        regions = np.digitize(f, bins=thresholds)
 
-        one_region = np.zeros((height, width))
-        for r in range(height):
-            for c in range(width):
-                if regions[r, c] == target_region:
-                    one_region[r, c] = 1
+        # check for region sizes
+        # sort regions array
+        # sorted_regions = np.sort(regions, axis=None)
+        # diff_regions = np.diff(sorted_regions)
+        # region_shifts = np.where(diff_regions != 0)
+        # region_sizes = []
+        # for r in range(0, len(region_shifts[0])):
+        #     if r == 0:
+        #         region_sizes.append(region_shifts[0][r])
+        #     else:
+        #         region_sizes.append(region_shifts[0][r] - region_shifts[0][r - 1])
+        #
+        # region_sizes.append(len(sorted_regions) - region_shifts[0][-1])
+        # print(region_sizes)
 
-        target_img = np.where(one_region == 1, n_frame, 0)
+        # extract the target region
+        if method == OtsuMethods.IMAGES:
+            otsu_mask = np.where(regions == target_region, f, 0)
+        else:
+            otsu_mask = np.where(regions == target_region, 1, 0)
 
-        mask.append(target_img)
+        otsu_images.append(otsu_mask)
+
+        # end = time.time()
+        # print('MLO: Frame processed in {}'.format(end - start))
+
+        if draw:
+            fig, ax = plt.subplots(nrows=2, ncols=2, figsize=(10, 3.5))
+
+            # plotting the original image.
+            ax[0][0].imshow(f, cmap='gray')
+            ax[0][0].set_title('Original')
+
+            # plotting the target region.
+            ax[0][1].imshow(otsu_mask)
+            ax[0][1].set_title('Target Region')
+
+            # plotting the histogram and the two thresholds obtained from multi-Otsu.
+            ax[1][0].hist(f.ravel(), bins=255)
+            ax[1][0].set_title('Histogram')
+            for thresh in thresholds:
+                ax[1][0].axvline(thresh, color='r')
+
+            # Plotting the Multi Otsu result.
+            ax[1][1].imshow(regions, cmap='Accent')
+            ax[1][1].set_title('Multi-Otsu result')
+
+            plt.subplots_adjust()
+            plt.show()
+
         if write:
-            cv2.imwrite(destination_dir + filename + '{}.png'.format(n), target_img)
+            cv2.imwrite(_destination_dir + '\\MLO_{}.png'.format(th_n), otsu_mask)
 
-    return mask
+    if draw:
+        plt.close('all')
+
+    return otsu_images
 
 
 def optimal_quantization(dataset, method: ThresholdingMethods = ThresholdingMethods.CORNERS, write: bool = True,

@@ -56,12 +56,34 @@ def get_values_from_roi(_roi_points: list, _image):
     return values
 
 
-def load_images_from_folder(folder, file_tag: str = 'ThFace'):
-    images = []
-    for filename in os.listdir(folder):
-        if file_tag in filename:
-            img = cv2.imread(os.path.join(folder, filename))
-            if img is not None:
-                images.append(img)
+# def load_images_from_folder(folder, file_tag):
+#     images = []
+#     for filename in os.listdir(folder):
+#         if file_tag in filename:
+#             img = cv2.imread(os.path.join(folder, filename))
+#             if img is not None:
+#                 images.append(img)
+#
+#     return images
 
-    return images
+
+def load_images_from_folder(folder, name_tag, file_type: str = '.png'):
+    n_images = len([file for file in os.listdir(folder) if file.endswith(file_type)])
+    img_array = []
+    for n in range(0, n_images):
+        img_name = folder + name_tag + '{}'.format(n) + file_type
+        img = cv2.imread(img_name)
+        img_array.append(img)
+
+    return img_array
+
+
+def load_gray_images_from_folder(folder, name_tag, file_type: str = '.png'):
+    n_images = len([file for file in os.listdir(folder) if file.endswith(file_type)])
+    img_array = []
+    for n in range(0, n_images):
+        img_name = folder + name_tag + '{}'.format(n) + file_type
+        img = cv2.imread(img_name, 0)
+        img_array.append(img)
+
+    return img_array

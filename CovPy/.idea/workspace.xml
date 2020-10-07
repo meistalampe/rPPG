@@ -2,15 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a8980d5-047c-4f0b-b405-29530f297dd4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/algorithm_functions.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hdf5_helper_functions.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/let_it_rip.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/program_2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/Dominik.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Readme.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/create_video.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/facedetection.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/featureextraction.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/normalization.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/respiration.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/step_four_edge_detection.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/step_three_face_tracking.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/step_two_face_segmentation.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temperature.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/algorithm_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/algorithm_functions.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cv_helper_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/cv_helper_functions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/program.py" beforeDir="false" afterPath="$PROJECT_DIR$/program.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hdf5_helper_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/hdf5_helper_functions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/let_it_rip.py" beforeDir="false" afterPath="$PROJECT_DIR$/let_it_rip.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/program_2.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,18 +57,19 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
   </component>
   <component name="PyCoverageOptionsProvider">
     <option name="myUseBundledCoveragePy" value="true" />
   </component>
-  <component name="RunManager" selected="Python.let_it_rip">
+  <component name="RunManager" selected="Python.featureextraction">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="CovPy" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -83,17 +92,20 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="let_it_rip" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="facedetection (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="CovPy" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/let_it_rip.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/facedetection.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -102,7 +114,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="program (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="featureextraction" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="CovPy" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -110,12 +122,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="E:/WorkStuff/Project_SARS_COV2/PythonProject" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="E:/WorkStuff/Project_SARS_COV2/PythonProject/program.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/featureextraction.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -124,42 +136,17 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="program" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="normalization (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="CovPy" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/program.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="program_2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="CovPy" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/program_2.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/normalization.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -168,7 +155,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="step_three_face_tracking" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="CovPy" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -181,9 +168,28 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/step_three_face_tracking.py" />
       <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="temperature" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="CovPy" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/temperature.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
@@ -192,11 +198,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.let_it_rip" />
-        <item itemvalue="Python.program" />
-        <item itemvalue="Python.program_2" />
-        <item itemvalue="Python.program (1)" />
-        <item itemvalue="Python.test" />
+        <item itemvalue="Python.featureextraction" />
+        <item itemvalue="Python.temperature" />
+        <item itemvalue="Python.facedetection (1)" />
+        <item itemvalue="Python.normalization (1)" />
+        <item itemvalue="Python.step_three_face_tracking" />
       </list>
     </recent_temporary>
   </component>
@@ -241,6 +247,17 @@
       <workItem from="1600854028637" duration="41765000" />
       <workItem from="1600933828383" duration="46950000" />
       <workItem from="1601034322948" duration="8833000" />
+      <workItem from="1601300186371" duration="1240000" />
+      <workItem from="1601372823303" duration="5963000" />
+      <workItem from="1601468751466" duration="3670000" />
+      <workItem from="1601535254985" duration="12406000" />
+      <workItem from="1601562117827" duration="12523000" />
+      <workItem from="1601620377654" duration="25983000" />
+      <workItem from="1601718014264" duration="10971000" />
+      <workItem from="1601730351376" duration="1243000" />
+      <workItem from="1601888280906" duration="16354000" />
+      <workItem from="1601972330975" duration="21574000" />
+      <workItem from="1602001581999" duration="19553000" />
     </task>
     <servers />
   </component>
@@ -256,38 +273,43 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state width="1387" height="466" key="DebuggerActiveHint/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1600888560819" />
-    <state x="739" y="268" key="FileChooserDialogImpl" timestamp="1599308647925">
+    <state x="739" y="268" key="FileChooserDialogImpl" timestamp="1602003173764">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="739" y="268" key="FileChooserDialogImpl/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1599308647925" />
-    <state width="1877" height="252" key="GridCell.Tab.0.bottom" timestamp="1601066522512">
+    <state x="739" y="268" key="FileChooserDialogImpl/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1602003173764" />
+    <state width="1877" height="252" key="GridCell.Tab.0.bottom" timestamp="1602031940650">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="252" key="GridCell.Tab.0.bottom/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1601066522512" />
-    <state width="1877" height="252" key="GridCell.Tab.0.center" timestamp="1601066522512">
+    <state width="1877" height="252" key="GridCell.Tab.0.bottom/0.0.1920.1050/-1920.0.1920.1050@-1920.0.1920.1050" timestamp="1601909650766" />
+    <state width="1877" height="252" key="GridCell.Tab.0.bottom/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1602031940650" />
+    <state width="1877" height="252" key="GridCell.Tab.0.center" timestamp="1602031940650">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="252" key="GridCell.Tab.0.center/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1601066522512" />
-    <state width="1877" height="252" key="GridCell.Tab.0.left" timestamp="1601066522511">
+    <state width="1877" height="252" key="GridCell.Tab.0.center/0.0.1920.1050/-1920.0.1920.1050@-1920.0.1920.1050" timestamp="1601909650766" />
+    <state width="1877" height="252" key="GridCell.Tab.0.center/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1602031940650" />
+    <state width="1877" height="252" key="GridCell.Tab.0.left" timestamp="1602031940650">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="252" key="GridCell.Tab.0.left/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1601066522511" />
-    <state width="1877" height="252" key="GridCell.Tab.0.right" timestamp="1601066522512">
+    <state width="1877" height="252" key="GridCell.Tab.0.left/0.0.1920.1050/-1920.0.1920.1050@-1920.0.1920.1050" timestamp="1601909650766" />
+    <state width="1877" height="252" key="GridCell.Tab.0.left/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1602031940650" />
+    <state width="1877" height="252" key="GridCell.Tab.0.right" timestamp="1602031940650">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1877" height="252" key="GridCell.Tab.0.right/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1601066522512" />
-    <state x="461" y="168" key="SettingsEditor" timestamp="1600862828605">
+    <state width="1877" height="252" key="GridCell.Tab.0.right/0.0.1920.1050/-1920.0.1920.1050@-1920.0.1920.1050" timestamp="1601909650766" />
+    <state width="1877" height="252" key="GridCell.Tab.0.right/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1602031940650" />
+    <state x="461" y="168" key="SettingsEditor" timestamp="1602003232940">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="461" y="168" key="SettingsEditor/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1600862828605" />
-    <state width="968" height="533" key="XDebugger.FullValuePopup" timestamp="1600896461053">
+    <state x="461" y="168" key="SettingsEditor/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1602003232940" />
+    <state width="968" height="533" key="XDebugger.FullValuePopup" timestamp="1601631134528">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="968" height="533" key="XDebugger.FullValuePopup/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1600896461053" />
-    <state x="656" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1601034324060">
+    <state width="968" height="533" key="XDebugger.FullValuePopup/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1601631134528" />
+    <state x="656" y="350" key="com.intellij.ide.util.TipDialog" timestamp="1601972331014">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="656" y="350" key="com.intellij.ide.util.TipDialog/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1601034324060" />
+    <state x="-1264" y="350" key="com.intellij.ide.util.TipDialog/0.0.1920.1050/-1920.0.1920.1050@-1920.0.1920.1050" timestamp="1601718016538" />
+    <state x="656" y="350" key="com.intellij.ide.util.TipDialog/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1601972331014" />
     <state x="616" y="205" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1600857023630">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -296,10 +318,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="769" y="443" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1600983264336" />
-    <state x="-1147" y="8" width="1158" height="719" key="dock-window-1" timestamp="1600991445765">
+    <state x="-1069" y="102" width="1075" height="722" key="dock-window-1" timestamp="1602003056439">
       <screen x="-1920" y="0" width="1920" height="1050" />
     </state>
-    <state x="-1147" y="8" width="1158" height="719" key="dock-window-1/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1600991445765" />
+    <state x="-1069" y="102" width="1075" height="722" key="dock-window-1/0.0.1920.1050/-1920.0.1920.1050@0.0.1920.1050" timestamp="1602003056439" />
     <state x="179" y="231" width="672" height="678" key="search.everywhere.popup" timestamp="1600356990833">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -325,13 +347,78 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/let_it_rip.py</url>
-          <line>211</line>
-          <option name="timeStamp" value="143" />
+          <line>110</line>
+          <option name="timeStamp" value="163" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/let_it_rip.py</url>
-          <line>310</line>
-          <option name="timeStamp" value="154" />
+          <line>106</line>
+          <option name="timeStamp" value="164" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/let_it_rip.py</url>
+          <line>215</line>
+          <option name="timeStamp" value="165" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/let_it_rip.py</url>
+          <line>23</line>
+          <option name="timeStamp" value="166" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/algorithm_functions.py</url>
+          <line>100</line>
+          <option name="timeStamp" value="172" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/step_three_face_tracking.py</url>
+          <line>112</line>
+          <option name="timeStamp" value="227" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/step_four_edge_detection.py</url>
+          <line>22</line>
+          <option name="timeStamp" value="230" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/step_four_edge_detection.py</url>
+          <line>36</line>
+          <option name="timeStamp" value="232" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/step_four_edge_detection.py</url>
+          <line>28</line>
+          <option name="timeStamp" value="233" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/step_three_face_tracking.py</url>
+          <line>60</line>
+          <option name="timeStamp" value="234" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/normalization.py</url>
+          <line>26</line>
+          <option name="timeStamp" value="243" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/step_three_face_tracking.py</url>
+          <line>55</line>
+          <option name="timeStamp" value="246" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/facedetection.py</url>
+          <line>151</line>
+          <option name="timeStamp" value="265" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/featureextraction.py</url>
+          <line>27</line>
+          <option name="timeStamp" value="345" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/featureextraction.py</url>
+          <line>24</line>
+          <option name="timeStamp" value="356" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -342,9 +429,19 @@
     </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/CovPy$let_it_rip.coverage" NAME="let_it_rip Coverage Results" MODIFIED="1601055266369" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/CovPy$let_it_rip.coverage" NAME="let_it_rip Coverage Results" MODIFIED="1601564831614" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/CovPy$step_two_face_segmentation.coverage" NAME="step_two_face_segmentation Coverage Results" MODIFIED="1601909564188" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CovPy$test.coverage" NAME="test Coverage Results" MODIFIED="1599495685178" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/CovPy$program_2.coverage" NAME="program_2 Coverage Results" MODIFIED="1600862098492" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/CovPy$program_2.coverage" NAME="program_2 Coverage Results" MODIFIED="1601635079298" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/CovPy$step_one_preprocessing.coverage" NAME="step_one_preprocessing Coverage Results" MODIFIED="1601564864827" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/CovPy$temperature.coverage" NAME="temperature Coverage Results" MODIFIED="1602029288478" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/CovPy$create_video.coverage" NAME="create_video Coverage Results" MODIFIED="1601671604248" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/CovPy$step_four_edge_detection.coverage" NAME="step_four_edge_detection Coverage Results" MODIFIED="1601731581096" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/CovPy$normalization__1_.coverage" NAME="normalization (1) Coverage Results" MODIFIED="1601907478215" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/CovPy$facedetection__1_.coverage" NAME="facedetection (1) Coverage Results" MODIFIED="1602027530722" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/CovPy$program.coverage" NAME="program Coverage Results" MODIFIED="1600983036703" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/CovPy$step_one_normalization.coverage" NAME="step_one_normalization Coverage Results" MODIFIED="1601621052270" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/CovPy$step_three_face_tracking.coverage" NAME="step_three_face_tracking Coverage Results" MODIFIED="1601977361062" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/CovPy$featureextraction.coverage" NAME="featureextraction Coverage Results" MODIFIED="1602031787744" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
