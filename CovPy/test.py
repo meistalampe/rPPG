@@ -1,6 +1,13 @@
 import cv2
 import numpy as np
 
+
+ad = {
+    'successrate': 100.0
+}
+
+for k in ad.keys():
+    print(ad[k])
 # read image
 image = cv2.imread('2019-03-11_103103.jpg')
 
