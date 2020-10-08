@@ -184,7 +184,7 @@ class LandmarkVerification:
 
     def write_dataset_to_h5file(self, setname, dataset, attributes: dict = None):
         subject_id = self.lm_file.partition("ThermalData_")[2].partition(".h5")[0]
-        name = 'Landmark_Verification_' + subject_id + '_F{}_'.format(self.lm_attrs['face_number'])
+        name = 'Landmark_Verification_' + subject_id + '_F{}.h5'.format(self.lm_attrs['face_number'])
         with h5py.File(fullfile(self.save_dir, name), 'w') as f:
             dset = f.create_dataset(setname, data=dataset)
             if attributes is not None:
@@ -198,7 +198,7 @@ class LandmarkVerification:
         is_same_size = self.dim_inspector()
         if is_matching and is_same_size:
             self.lm_attrs['face_number'] = face_number
-            self.draw_face_from_landmarks(face_number=face_number, verbose=True)
+            self.draw_face_from_landmarks(face_number=face_number, verbose=False)
             self.write_dataset_to_h5file('lm_verification', self.lm_verification, self.lm_attrs)
         else:
             # as both inspectors should raise an exception if there is a mismatch the program should never get here

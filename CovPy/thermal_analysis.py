@@ -1,10 +1,8 @@
-import h5py
-import cv2
-import os
 from os.path import join as fullfile
+
+import h5py
+import matplotlib.pyplot as plt
 import numpy as np
-import face_alignment
-from thermal_landmarks import LandmarkGenerator, LandmarkVerification, apply_gaussian
 
 
 class ThermalAnalysis:
@@ -27,6 +25,7 @@ class ThermalAnalysis:
         self.landmarks = []
         self.lm_attrs = {}
         self.temp_data = []
+        self.n_face = 0
 
     def name_inspector(self):
         """
@@ -105,7 +104,7 @@ class ThermalAnalysis:
 
     def write_dataset_to_h5file(self, setname, dataset, attributes: dict = None):
         subject_id = self.data_file.partition("ThermalData_")[2].partition(".h5")[0]
-        name = 'Results_' + subject_id + '_F{}_'.format(self.lm_attrs['face_number'])
+        name = 'Results_' + subject_id + '_F{}.h5'.format(self.n_face)
         with h5py.File(fullfile(self.save_dir, name), 'a') as f:
             if setname in list(f.keys()):
                 del f[setname]
@@ -118,15 +117,57 @@ class ThermalAnalysis:
     def run(self, face_number: int = 0):
         self.load_dataset()
         self.load_landmarks()
-        self.get_temperature_from_raw(dataset=self.dset)
-        roi_types = list(ThermalAnalysis.regions_of_interest.keys())
+        is_matching = self.name_inspector()
+        is_same_size = self.dim_inspector()
+        if is_matching and is_same_size:
+            self.get_temperature_from_raw(dataset=self.dset)
+            roi_types = list(ThermalAnalysis.regions_of_interest.keys())
+            self.n_face = face_number
+            for rt in roi_types:
+                temperatures, timestamps = self.get_temp_of_poi(face_number=face_number, roi_type=rt, poi_size=2)
+                plt.plot(temperatures)
+                plt.title(rt)
+                plt.ylabel('Temperature [Celsius]')
+                plt.xlabel('Sample')
+                plt.show()
+                t_attributes = {
+                    'timestamps': timestamps,
+                    'n_frames': len(temperatures),
+                    'roi_type': rt,
+                    'unit': 'Celsius'
+                }
+                self.write_dataset_to_h5file(setname=rt, dataset=temperatures, attributes=t_attributes)
+        else:
+            # as both inspectors should raise an exception if there is a mismatch the program should never get here
+            return -1
 
-        for rt in roi_types:
-            temperatures, timestamps = self.get_temp_of_poi(face_number=face_number, roi_type=rt, poi_size=1)
-            t_attributes = {
-                'timestamps': timestamps,
-                'n_frames': len(temperatures),
-                'roi_type': rt,
-                'unit': 'Celsius'
-            }
-            self.write_dataset_to_h5file(setname=rt, dataset=temperatures, attributes=t_attributes)
+
+# --- Test --- #
+
+file_name = 'ThermalData_18_06_2020_13_19_36.h5'  # Andreas
+# file_name = 'ThermalData_18_06_2020_13_24_58.h5'  # Elena
+folder = 'E:\\GitHub\\CovPySourceFile'
+destination_dir = 'E:\\GitHub\\CovPySourceFile\\Results'
+
+# lg = LandmarkGenerator(file_name, folder, destination_dir)
+# lg.run()
+
+lm_name = 'Landmarks_ThermalData_18_06_2020_13_19_36.h5'
+# lv = LandmarkVerification(
+#     data_filename=file_name,
+#     data_path=folder,
+#     lm_filename=lm_name,
+#     lm_path=destination_dir,
+#     savepath=destination_dir
+# )
+# lv.run(face_number=0)
+
+ta = ThermalAnalysis(
+    data_filename=file_name,
+    lm_filename=lm_name,
+    data_path=folder,
+    lm_path=destination_dir,
+    savepath=destination_dir
+)
+
+ta.run(face_number=0)
